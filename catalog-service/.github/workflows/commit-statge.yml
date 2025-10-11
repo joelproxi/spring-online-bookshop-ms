@@ -5,6 +5,9 @@ jobs:
   build:
     name: Build and Test
     runs-on: ubuntu-22.04
+    defaults:
+      run:
+        working-directory: spring-online-book-ms/catalogue-service
     permissions:
       contents: read
       security-events: write
@@ -13,7 +16,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Setup Java
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 21
