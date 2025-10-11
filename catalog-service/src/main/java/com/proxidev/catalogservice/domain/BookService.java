@@ -1,0 +1,49 @@
+package com.proxidev.catalogservice.domain;
+
+import com.proxidev.catalogservice.exceptions.BookAlreadyExistsException;
+import com.proxidev.catalogservice.exceptions.BookNotFoundException;
+import org.springframework.stereotype.Service;
+
+@Service
+public class BookService {
+	private final BookRepository bookRepository;
+
+	public BookService(BookRepository bookRepository) {
+		this.bookRepository = bookRepository;
+	}
+
+	public Iterable<Book> getBooks() {
+		return bookRepository.findAll();
+	}
+
+	public Book getBookByIsbn(String isbn) {
+		return bookRepository.findByIsbn(isbn)
+				.orElseThrow(() -> new BookNotFoundException(isbn));
+	}
+
+	public Book addBook(Book book) {
+		if (bookRepository.existsByIsbn(book.isbn())) {
+			throw new BookAlreadyExistsException(book.isbn());
+		}
+		return bookRepository.save(book);
+	}
+
+	public void deleteByIsbn(String isbn) {
+		this.getBookByIsbn(isbn);
+		bookRepository.deleteByIsbn(isbn);
+	}
+
+	public Book updateBook(String isbn, Book book) {
+		return bookRepository.findByIsbn(isbn)
+				.map(existingBook -> {
+					var bookToUpdate = new Book(
+							existingBook.isbn(),
+							existingBook.title(),
+							existingBook.author(),
+							existingBook.price()
+							);
+					return bookRepository.save(bookToUpdate);
+				})
+				.orElseGet(() -> addBook(book));
+	}
+}
