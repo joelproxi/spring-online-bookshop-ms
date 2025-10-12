@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-22.04
     defaults:
       run:
-        working-directory: spring-online-book-ms/catalogue-service
+        working-directory: spring-online-book-ms/catalog-service
     permissions:
       contents: read
       security-events: write
