@@ -20,10 +20,10 @@ class CatalogBookServiceTest {
 	@Test
 	void whenPostRequestThenBookCreated() {
 		var expectedBook = new Book(
-				"1234567890",
+				"1234567899",
 				"Title",
-				"a",
-				3.3
+				"Author",
+				9.99
 		);
 
 		webTestClient
