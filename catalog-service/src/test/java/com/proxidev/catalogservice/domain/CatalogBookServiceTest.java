@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 
 @SpringBootTest(
-		webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT
+	webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT
 )
 class CatalogBookServiceTest {
 
@@ -20,10 +20,7 @@ class CatalogBookServiceTest {
 	@Test
 	void whenPostRequestThenBookCreated() {
 		var expectedBook = new Book(
-				"1234567899",
-				"Title",
-				"Author",
-				9.99
+				1L, "1234567890", "Title", "Author", 9.90, null, null, 0
 		);
 
 		webTestClient

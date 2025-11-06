@@ -1,0 +1,44 @@
+[
+  {
+    "response": {
+      "body": [
+        {
+          "ideas": [
+            {
+              "id": "0bf5666f-6bf6-4b1a-be9f-ad6f1f7d16fc",
+              "user_id": "c424d504-f63c-4903-b607-0896d594693d",
+              "idea_text": "🧠 Idée : Les Animaux et Leurs Complices Insoupçonnés\n\n🎬 Concept : Présente des faits surprenants sur des amitiés étonnantes entre différentes espèces animales, montrant comment des espèces normalement opposées peuvent se lier d’amitié. Sources : Études sur les comportements d’association inter-espèces (source : Journal of Animal Ecology).\n\n🎯 Pourquoi ça marche ? : Ce concept joue sur la curiosité en promettant des histoires émouvantes et inattendues, provoquant des émotions et encourageant les partages sur les réseaux sociaux.",
+              "source": "manual",
+              "cached": false,
+              "consumed_at": null,
+              "created_at": "2025-11-03T19:20:47.560373+00:00",
+              "rows": null
+            },
+            {
+              "id": "d4e519a3-ebc2-4150-96e5-914be6ffa519",
+              "user_id": "c424d504-f63c-4903-b607-0896d594693d",
+              "idea_text": "🧠 Idée : Top 5 des Animaux avec des Super Pouvoirs\n\n🎬 Concept : Fait un classement des animaux dotés de caractéristiques surprenantes, comme l'axolotl qui peut régénérer ses membres, avec des anecdotes hilarantes liées à leurs super pouvoirs. Sources : Recherches sur les capacités régénératrices de l’axolotl (source : Nature Reviews).\n\n🎯 Pourquoi ça marche ? : L'effet de surprise et la notion de \"super pouvoir\" captivent immédiatement l'audience, tout en jouant avec des biais d’admiration et des émotions positives, parfait pour générer des partages.",
+              "source": "manual",
+              "cached": false,
+              "consumed_at": null,
+              "created_at": "2025-11-03T19:20:47.559301+00:00",
+              "rows": null
+            },
+            {
+              "id": "0221fa3a-a7ce-4043-a9c5-fed8979b8ab8",
+              "user_id": "c424d504-f63c-4903-b607-0896d594693d",
+              "idea_text": "🧠 Idée : Les Mythes Sur les Animaux Brisés en Direct\n\n🎬 Concept : Déboulonne des mythes populaires sur certains animaux en les confrontant à des faits scientifiques tout en utilisant des mèmes et références culturelles pour ajouter une touche humoristique. Sources : Revue sur les mythes des animaux populaires (source : Scientific American).\n\n🎯 Pourquoi ça marche ? : En jouant sur l'effet de contraste entre mythe et réalité et en suscitant des débats, cette idée attire les spectateurs tout en les incitant à commenter et partager leurs propres croyances.",
+              "source": "manual",
+              "cached": false,
+              "consumed_at": null,
+              "created_at": "2025-11-03T19:20:47.53812+00:00",
+              "rows": null
+            }
+          ]
+        }
+      ],
+      "headers": {},
+      "statusCode": 200
+    }
+  }
+]

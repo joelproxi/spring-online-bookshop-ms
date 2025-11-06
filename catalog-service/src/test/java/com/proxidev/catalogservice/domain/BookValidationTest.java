@@ -24,12 +24,7 @@ class BookValidationTest {
 
 	@Test
 	void whenAllFieldsCorrectThenValidationSucceeds() {
-		var book = new Book(
-				"1234567890",
-				"Title",
-				"Author",9.99
-		);
-
+		var book = new Book(1L, "1234567890", "Title", "Author", 9.90, null, null, 0);
 		Set<ConstraintViolation<Book>> constraintViolations = validator.validate(book);
 
 		assertThat(constraintViolations.isEmpty());
@@ -38,9 +33,7 @@ class BookValidationTest {
 	@Test
 	void whenISBNDefinedThenValidationFails() {
 		var book = new Book(
-				"a1234567890",
-				"Title",
-				"Author",9.99
+				1L, "1234567890", "Title", "Author", 9.90, null, null, 0
 		);
 		Set<ConstraintViolation<Book>> constraintViolations = validator.validate(book);
 

@@ -22,7 +22,7 @@ class CatalogServiceApplicationTests {
 
 	@Test
 	void testWhenPostRequestThenBookCreated() {
-		var expectedBook = new Book("1234567890", "Title", "Author", 9.90);
+		var expectedBook = new Book(1L, "1234567890", "Title", "Author", 9.90, null, null, 0);
 
 		webTestClient
 				.post()
