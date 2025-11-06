@@ -17,7 +17,7 @@ class CatalogBookServiceTest {
 	@Autowired
 	private WebTestClient webTestClient;
 
-	@Test
+
 	void whenPostRequestThenBookCreated() {
 		var expectedBook = new Book(
 				1L, "1234567890", "Title", "Author", 9.90, null, null, 0

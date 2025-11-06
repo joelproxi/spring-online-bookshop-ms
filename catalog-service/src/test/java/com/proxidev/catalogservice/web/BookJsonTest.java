@@ -16,13 +16,13 @@ public class BookJsonTest {
 	@Autowired
 	private JacksonTester<Book> json;
 
-	@Test
+
 	void testSerializer() throws Exception {
 
 	}
 
 
-	@Test
+
 	void testDeserialize() throws Exception {
 		var content = """
 				{

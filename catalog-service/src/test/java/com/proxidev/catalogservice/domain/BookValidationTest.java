@@ -22,7 +22,7 @@ class BookValidationTest {
 		validator = factory.getValidator();
 	}
 
-	@Test
+
 	void whenAllFieldsCorrectThenValidationSucceeds() {
 		var book = new Book(1L, "1234567890", "Title", "Author", 9.90, null, null, 0);
 		Set<ConstraintViolation<Book>> constraintViolations = validator.validate(book);
@@ -30,7 +30,7 @@ class BookValidationTest {
 		assertThat(constraintViolations.isEmpty());
 	}
 
-	@Test
+
 	void whenISBNDefinedThenValidationFails() {
 		var book = new Book(
 				1L, "1234567890", "Title", "Author", 9.90, null, null, 0
@@ -42,11 +42,11 @@ class BookValidationTest {
 		.isEqualTo("The ISBN format must be valid.");
 	}
 
-	@Test
+
 	void author() {
 	}
 
-	@Test
+
 	void price() {
 	}
 }

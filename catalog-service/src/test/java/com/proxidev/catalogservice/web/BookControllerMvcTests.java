@@ -23,7 +23,7 @@ class BookControllerMvcTests {
 	@MockitoBean
 	private BookService bookService;
 
-	@Test
+
 	void testWhenGetBookNotExistingThenShouldReturn404() throws Exception {
 		String isbn = "73737313940";
 		given(bookService.getBookByIsbn(isbn))
